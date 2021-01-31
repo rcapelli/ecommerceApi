@@ -1,0 +1,36 @@
+
+
+/api/products
+
+_id : ObjectId
+name: String
+description: String
+unitCost: int
+thumbnail : String
+available : Boolean
+
+
+
+
+Backend:
+
+    routes
+    controllers
+    models(bd) (Mongoose)
+    utils
+    services
+    database
+    keys
+    .env
+
+gitignore
+    .env
+    keys
+    node_modules
+
+
+npm i express
+npm i mongoose
+npm i dotenv
+npm i compression
+npm i cors

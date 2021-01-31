@@ -1,0 +1,44 @@
+FORMAT: 1A
+
+# Ecommerce API
+Esta api se utilizará para generar endpoints para un sitio ecommerce
+
+#Group Productos
+Productos almacenados
+
+## Todos los productos [/api/products]
+### Todos los productos [GET]
++ Response 200 (application/json)
+    {
+        info: {
+            count : int,
+            next : String | null,
+            prev : String | null
+        },
+        data : {
+            _id : ObjectId,
+            name: String,
+            description: String,
+            unitCost: int,
+            thumbnail : String,
+            available : Boolean
+        }
+    }
++ Response 404 (application/json)
+    {
+        message: 'Not found'
+    }
+
+## Mostrar un producto [/api/product]
+### Mostrar un producto específico [GET]
++ Response 200 (application/json)
+    {
+        {
+            _id : ObjectId,
+            name: String,
+            description: String,
+            unitCost: int,
+            thumbnail : String,
+            available : Boolean
+        }
+    }
